@@ -3,7 +3,7 @@
 
 # nginx-rtmp
 if ps -ef | grep nginx >/dev/null 2>&1 ; then
-    #echo "nginx service is running"
+    echo "nginx service is running"
     :
 else
     echo "nginx service is NOT running. Starting..."    
@@ -19,7 +19,7 @@ fi
 
 # postgres
 if ps -ef | grep postgres >/dev/null 2>&1 ; then
-    #echo "postgres service is running"
+    echo "postgres service is running"
     :
 else
     echo "postgreSQL service is NOT running. Starting..."
@@ -35,7 +35,7 @@ fi
 
 # apache2/phppsadmin
 if ps -ef | grep apache2 >/dev/null 2>&1 ; then
-    #echo "apache2 service is running"
+    echo "apache2 service is running"
     :
 else
     echo "apache2 service is NOT running. Starting..."
@@ -51,7 +51,7 @@ fi
 
 # flask: malamaker/nginx-rtmp-auth
 if ps -ef | grep "flask run" >/dev/null 2>&1 ; then
-    #echo "nginx-rtmp-auth service is running"
+    echo "nginx-rtmp-auth service is running"
     :
 else
     echo "nginx-rtmp-auth service is NOT running. Starting..."
